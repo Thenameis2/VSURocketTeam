@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  font-family: Arial, sans-serif;
+  padding: 0;
+  background-color: #0d1016;
+  color: #ffffff;
+}
+
+#earth-container {
+  width: 100vw;
+  height: 60vh;
+}
+/* Add these styles to your existing CSS */
+.tabs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure the tabs are displayed above other content */
+}
+
+
+.tab-button {
+  border: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tab-button.active {
+  background-color: #ddd;
+}
+
+.page-content {
+  display: none; /* Hide all content sections initially */
+}
+
+#earth-page {
+  display: block; /* Display the Earth Animation page by default */
+}
+
+/* Add your custom CSS styling and animations here */
+
+
+/* Hero Section */
+.hero {
+  background-image: url('rocket.png');
+  background-size: contain; /* Change to 'contain' */
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0; /* Adjust the top and bottom padding as needed */
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Team Members */
+.team {
+  display: flex;
+  flex-direction: row; /* Display team members horizontally */
+  gap: 30px;
+  margin: 20px 0; /* Adjust the top margin as needed */
+  align-items: center; /* Center team members vertically */
+}
+
+.team-member {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+.projects{
+  position: relative ;
+  left : -47% ;
+  
+}
+
